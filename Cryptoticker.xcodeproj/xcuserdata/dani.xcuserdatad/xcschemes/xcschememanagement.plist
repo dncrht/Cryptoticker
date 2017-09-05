@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Crypto ticker.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Cryptoticker.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>335EA1751F5EFE7300B70D9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>33A2D4C91F5BEC6800669EFA</key>
 		<dict>
 			<key>primary</key>

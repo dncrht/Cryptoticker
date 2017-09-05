@@ -8,14 +8,53 @@
 
 /* Begin PBXBuildFile section */
 		331A31781F5D489500BF3F6E /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A31771F5D489500BF3F6E /* Rates.swift */; };
+		335EA1791F5EFE7300B70D9C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335EA1781F5EFE7300B70D9C /* NotificationCenter.framework */; };
+		335EA17E1F5EFE7300B70D9C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335EA17D1F5EFE7300B70D9C /* TodayViewController.swift */; };
+		335EA1811F5EFE7300B70D9C /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 335EA17F1F5EFE7300B70D9C /* TodayViewController.xib */; };
+		335EA1851F5EFE7300B70D9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 335EA1831F5EFE7300B70D9C /* InfoPlist.strings */; };
+		335EA1881F5EFE7300B70D9C /* Crypto ticker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 335EA1761F5EFE7300B70D9C /* Crypto ticker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		335EA18E1F5EFF7300B70D9C /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335EA18D1F5EFF7300B70D9C /* Rates.swift */; };
 		33A2D4CE1F5BEC6800669EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A2D4CD1F5BEC6800669EFA /* AppDelegate.swift */; };
 		33A2D4D01F5BEC6800669EFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A2D4CF1F5BEC6800669EFA /* ViewController.swift */; };
 		33A2D4D21F5BEC6800669EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A2D4D11F5BEC6800669EFA /* Assets.xcassets */; };
 		33A2D4D51F5BEC6800669EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A2D4D31F5BEC6800669EFA /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		335EA1861F5EFE7300B70D9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33A2D4C21F5BEC6800669EFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 335EA1751F5EFE7300B70D9C;
+			remoteInfo = "Crypto ticker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		335EA18C1F5EFE7300B70D9C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				335EA1881F5EFE7300B70D9C /* Crypto ticker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		331A31771F5D489500BF3F6E /* Rates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rates.swift; sourceTree = "<group>"; };
+		335EA1761F5EFE7300B70D9C /* Crypto ticker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Crypto ticker.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		335EA1781F5EFE7300B70D9C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		335EA17C1F5EFE7300B70D9C /* Crypto_ticker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Crypto_ticker.entitlements; sourceTree = "<group>"; };
+		335EA17D1F5EFE7300B70D9C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		335EA1801F5EFE7300B70D9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		335EA1821F5EFE7300B70D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		335EA1841F5EFE7300B70D9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		335EA18D1F5EFF7300B70D9C /* Rates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rates.swift; sourceTree = "<group>"; };
+		335EA18F1F5F008700B70D9C /* Cryptoticker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Cryptoticker.entitlements; path = Cryptoticker/Cryptoticker.entitlements; sourceTree = "<group>"; };
 		33A2D4CA1F5BEC6800669EFA /* Cryptoticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptoticker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A2D4CD1F5BEC6800669EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33A2D4CF1F5BEC6800669EFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +64,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		335EA1731F5EFE7300B70D9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335EA1791F5EFE7300B70D9C /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33A2D4C71F5BEC6800669EFA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +82,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		335EA1771F5EFE7300B70D9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				335EA1781F5EFE7300B70D9C /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		335EA17A1F5EFE7300B70D9C /* Crypto ticker */ = {
+			isa = PBXGroup;
+			children = (
+				335EA17D1F5EFE7300B70D9C /* TodayViewController.swift */,
+				335EA17F1F5EFE7300B70D9C /* TodayViewController.xib */,
+				335EA1821F5EFE7300B70D9C /* Info.plist */,
+				335EA1831F5EFE7300B70D9C /* InfoPlist.strings */,
+				335EA17B1F5EFE7300B70D9C /* Supporting Files */,
+				335EA18D1F5EFF7300B70D9C /* Rates.swift */,
+			);
+			path = "Crypto ticker";
+			sourceTree = "<group>";
+		};
+		335EA17B1F5EFE7300B70D9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				335EA17C1F5EFE7300B70D9C /* Crypto_ticker.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		33A2D4C11F5BEC6800669EFA = {
 			isa = PBXGroup;
 			children = (
-				33A2D4CC1F5BEC6800669EFA /* Cryptoticker */,
+				335EA18F1F5F008700B70D9C /* Cryptoticker.entitlements */,
+				33A2D4CC1F5BEC6800669EFA /* Config */,
+				335EA17A1F5EFE7300B70D9C /* Crypto ticker */,
+				335EA1771F5EFE7300B70D9C /* Frameworks */,
 				33A2D4CB1F5BEC6800669EFA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,11 +126,12 @@
 			isa = PBXGroup;
 			children = (
 				33A2D4CA1F5BEC6800669EFA /* Cryptoticker.app */,
+				335EA1761F5EFE7300B70D9C /* Crypto ticker.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		33A2D4CC1F5BEC6800669EFA /* Cryptoticker */ = {
+		33A2D4CC1F5BEC6800669EFA /* Config */ = {
 			isa = PBXGroup;
 			children = (
 				33A2D4CD1F5BEC6800669EFA /* AppDelegate.swift */,
@@ -61,12 +141,30 @@
 				33A2D4D61F5BEC6800669EFA /* Info.plist */,
 				331A31771F5D489500BF3F6E /* Rates.swift */,
 			);
+			name = Config;
 			path = Cryptoticker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		335EA1751F5EFE7300B70D9C /* Crypto ticker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 335EA1891F5EFE7300B70D9C /* Build configuration list for PBXNativeTarget "Crypto ticker" */;
+			buildPhases = (
+				335EA1721F5EFE7300B70D9C /* Sources */,
+				335EA1731F5EFE7300B70D9C /* Frameworks */,
+				335EA1741F5EFE7300B70D9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Crypto ticker";
+			productName = "Crypto ticker";
+			productReference = 335EA1761F5EFE7300B70D9C /* Crypto ticker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		33A2D4C91F5BEC6800669EFA /* Cryptoticker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33A2D4D91F5BEC6800669EFA /* Build configuration list for PBXNativeTarget "Cryptoticker" */;
@@ -74,10 +172,12 @@
 				33A2D4C61F5BEC6800669EFA /* Sources */,
 				33A2D4C71F5BEC6800669EFA /* Frameworks */,
 				33A2D4C81F5BEC6800669EFA /* Resources */,
+				335EA18C1F5EFE7300B70D9C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				335EA1871F5EFE7300B70D9C /* PBXTargetDependency */,
 			);
 			name = Cryptoticker;
 			productName = Cryptoticker;
@@ -94,9 +194,18 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Dani;
 				TargetAttributes = {
+					335EA1751F5EFE7300B70D9C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					33A2D4C91F5BEC6800669EFA = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -114,11 +223,21 @@
 			projectRoot = "";
 			targets = (
 				33A2D4C91F5BEC6800669EFA /* Cryptoticker */,
+				335EA1751F5EFE7300B70D9C /* Crypto ticker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		335EA1741F5EFE7300B70D9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335EA1811F5EFE7300B70D9C /* TodayViewController.xib in Resources */,
+				335EA1851F5EFE7300B70D9C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33A2D4C81F5BEC6800669EFA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +250,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		335EA1721F5EFE7300B70D9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335EA17E1F5EFE7300B70D9C /* TodayViewController.swift in Sources */,
+				335EA18E1F5EFF7300B70D9C /* Rates.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33A2D4C61F5BEC6800669EFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -143,7 +271,31 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		335EA1871F5EFE7300B70D9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 335EA1751F5EFE7300B70D9C /* Crypto ticker */;
+			targetProxy = 335EA1861F5EFE7300B70D9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		335EA17F1F5EFE7300B70D9C /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				335EA1801F5EFE7300B70D9C /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		335EA1831F5EFE7300B70D9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				335EA1841F5EFE7300B70D9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		33A2D4D31F5BEC6800669EFA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -155,6 +307,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		335EA18A1F5EFE7300B70D9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Crypto ticker/Crypto_ticker.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Crypto ticker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.fourthrail.Cryptoticker.Crypto-ticker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		335EA18B1F5EFE7300B70D9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Crypto ticker/Crypto_ticker.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Crypto ticker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.fourthrail.Cryptoticker.Crypto-ticker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		33A2D4D71F5BEC6800669EFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -248,7 +428,9 @@
 		33A2D4DA1F5BEC6800669EFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Cryptoticker/Cryptoticker.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Cryptoticker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -261,7 +443,9 @@
 		33A2D4DB1F5BEC6800669EFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Cryptoticker/Cryptoticker.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Cryptoticker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -274,6 +458,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		335EA1891F5EFE7300B70D9C /* Build configuration list for PBXNativeTarget "Crypto ticker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				335EA18A1F5EFE7300B70D9C /* Debug */,
+				335EA18B1F5EFE7300B70D9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		33A2D4C51F5BEC6800669EFA /* Build configuration list for PBXProject "Cryptoticker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
