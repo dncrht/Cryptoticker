@@ -27,13 +27,13 @@ class Rates {
 
           do {
 
-            let json = try JSONSerialization.jsonObject(with: data!) as! [String: String]
+            if let json = try JSONSerialization.jsonObject(with: data!) as? [String: String] {
+              self.eur[currency] = Double(json["lprice"] ?? "0")
 
-            self.eur[currency] = Double(json["lprice"] ?? "0")
+              NSLog("\(currency) = \(self.eur[currency])")
 
-            NSLog("\(currency) = \(self.eur[currency])")
-
-            callback(self)
+              callback(self)
+            }
 
           } catch let error as NSError {
             print(error)
