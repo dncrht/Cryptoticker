@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		331A31781F5D489500BF3F6E /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A31771F5D489500BF3F6E /* Rates.swift */; };
 		335EA1791F5EFE7300B70D9C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335EA1781F5EFE7300B70D9C /* NotificationCenter.framework */; };
 		335EA17E1F5EFE7300B70D9C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335EA17D1F5EFE7300B70D9C /* TodayViewController.swift */; };
 		335EA1811F5EFE7300B70D9C /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 335EA17F1F5EFE7300B70D9C /* TodayViewController.xib */; };
 		335EA1851F5EFE7300B70D9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 335EA1831F5EFE7300B70D9C /* InfoPlist.strings */; };
 		335EA1881F5EFE7300B70D9C /* Crypto ticker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 335EA1761F5EFE7300B70D9C /* Crypto ticker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		335EA18E1F5EFF7300B70D9C /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335EA18D1F5EFF7300B70D9C /* Rates.swift */; };
+		335EA1921F5F442F00B70D9C /* Cryptoticker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 335EA1901F5F442F00B70D9C /* Cryptoticker.xcdatamodeld */; };
+		335EA1931F5F442F00B70D9C /* Cryptoticker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 335EA1901F5F442F00B70D9C /* Cryptoticker.xcdatamodeld */; };
 		33A2D4CE1F5BEC6800669EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A2D4CD1F5BEC6800669EFA /* AppDelegate.swift */; };
 		33A2D4D01F5BEC6800669EFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A2D4CF1F5BEC6800669EFA /* ViewController.swift */; };
 		33A2D4D21F5BEC6800669EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A2D4D11F5BEC6800669EFA /* Assets.xcassets */; };
@@ -45,7 +46,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		331A31771F5D489500BF3F6E /* Rates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rates.swift; sourceTree = "<group>"; };
 		335EA1761F5EFE7300B70D9C /* Crypto ticker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Crypto ticker.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		335EA1781F5EFE7300B70D9C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		335EA17C1F5EFE7300B70D9C /* Crypto_ticker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Crypto_ticker.entitlements; sourceTree = "<group>"; };
@@ -55,6 +55,7 @@
 		335EA1841F5EFE7300B70D9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		335EA18D1F5EFF7300B70D9C /* Rates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rates.swift; sourceTree = "<group>"; };
 		335EA18F1F5F008700B70D9C /* Cryptoticker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Cryptoticker.entitlements; path = Cryptoticker/Cryptoticker.entitlements; sourceTree = "<group>"; };
+		335EA1911F5F442F00B70D9C /* Cryptoticker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cryptoticker.xcdatamodel; sourceTree = "<group>"; };
 		33A2D4CA1F5BEC6800669EFA /* Cryptoticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptoticker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A2D4CD1F5BEC6800669EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33A2D4CF1F5BEC6800669EFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,11 +136,11 @@
 			isa = PBXGroup;
 			children = (
 				33A2D4CD1F5BEC6800669EFA /* AppDelegate.swift */,
+				335EA1901F5F442F00B70D9C /* Cryptoticker.xcdatamodeld */,
 				33A2D4CF1F5BEC6800669EFA /* ViewController.swift */,
 				33A2D4D11F5BEC6800669EFA /* Assets.xcassets */,
 				33A2D4D31F5BEC6800669EFA /* Main.storyboard */,
 				33A2D4D61F5BEC6800669EFA /* Info.plist */,
-				331A31771F5D489500BF3F6E /* Rates.swift */,
 			);
 			name = Config;
 			path = Cryptoticker;
@@ -256,6 +257,7 @@
 			files = (
 				335EA17E1F5EFE7300B70D9C /* TodayViewController.swift in Sources */,
 				335EA18E1F5EFF7300B70D9C /* Rates.swift in Sources */,
+				335EA1931F5F442F00B70D9C /* Cryptoticker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				33A2D4D01F5BEC6800669EFA /* ViewController.swift in Sources */,
-				331A31781F5D489500BF3F6E /* Rates.swift in Sources */,
 				33A2D4CE1F5BEC6800669EFA /* AppDelegate.swift in Sources */,
+				335EA1921F5F442F00B70D9C /* Cryptoticker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +467,7 @@
 				335EA18B1F5EFE7300B70D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33A2D4C51F5BEC6800669EFA /* Build configuration list for PBXProject "Cryptoticker" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +488,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		335EA1901F5F442F00B70D9C /* Cryptoticker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				335EA1911F5F442F00B70D9C /* Cryptoticker.xcdatamodel */,
+			);
+			currentVersion = 335EA1911F5F442F00B70D9C /* Cryptoticker.xcdatamodel */;
+			path = Cryptoticker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 33A2D4C21F5BEC6800669EFA /* Project object */;
 }
